@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: Auth-Service
+  datasource:
+    url: jdbc:mysql://localhost:3306/Chat_Auth_Service
+    username: root
+    password: Samarth95360@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 25
+    username: www.samarthagarwal95360@gmail.com
+    password: mxpl wrme qwdw ljus
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+
+
+server:
+  port: 8025
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
