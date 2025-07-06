@@ -1,0 +1,303 @@
+/* OTP Page Enhancements */
+.otp-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
+  padding: 2rem;
+}
+
+.otp-card {
+  max-width: 900px;
+  background-color: #ffffff;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input::placeholder {
+  color: #888;
+  opacity: 0.6;
+}
+
+.icon-left {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #6c757d;
+  pointer-events: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  padding-left: 2.5rem;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+/* General styles */
+
+.icon-toggle:hover {
+  color: #007bff;
+}
+.login-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #f3f4f6);
+  padding: 2rem;
+}
+
+.login-card {
+  max-width: 900px;
+  background-color: #ffffff;
+}
+
+
+.ezy__signin7 {
+  --bs-body-color: #333b7b;
+  --bs-body-bg: #ffffff;
+  --ezy-theme-color: #0d6efd;
+  background-color: var(--bs-body-bg);
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.ezy__signin7 .container {
+  min-height: 100%;
+}
+
+.ezy__signin7-heading {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--bs-body-color);
+}
+
+.ezy__signin7-bg-holder {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  border-radius: 15px;
+}
+
+.login-intro {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group .form-control {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  height: 48px;
+  border-radius: 10px;
+  background-color: rgba(163, 190, 241, 0.14);
+  border: 1px solid #ddd;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group .form-control:focus {
+  border-color: var(--ezy-theme-color);
+  background-color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+.form-group i.fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.form-group .fa-envelope,
+.form-group .fa-lock {
+  left: 12px;
+}
+
+.form-group .show-password-icon {
+  right: 12px;
+  cursor: pointer;
+}
+
+.ezy__signin7-btn-submit {
+  background-color: #333b7b;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.ezy__signin7-btn-submit:hover {
+  background-color: #1f265d;
+}
+
+.login-form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  padding-left: 2.5rem;  /* for left icon */
+  padding-right: 2.5rem; /* for right icon */
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #fff;
+}
+
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.icon-left {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #6c757d;
+  pointer-events: none;
+}
+
+.icon-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #333b7b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #1f265d;
+}
+
+.form-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.login-form,
+.otp-form {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: all 0.6s ease;
+}
+
+.form-wrapper.login .login-form {
+  left: 0;
+}
+
+.form-wrapper.login .otp-form {
+  left: 100%;
+}
+
+.form-wrapper.otp .login-form {
+  left: -100%;
+}
+
+.form-wrapper.otp .otp-form {
+  left: 0;
+}
+
+/* Existing CSS remains same, add this at the bottom */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Additional improvements to forms inside */
+form {
+  padding-top: 10px;
+}
+
+
+.flip-card-inner {
+  transition: transform 0.8s ease-in-out;
+}
+input::placeholder {
+  color: #888;
+  opacity: 0.6;
+}

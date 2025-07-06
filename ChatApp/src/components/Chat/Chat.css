@@ -1,0 +1,281 @@
+.chat-app-theme .chat-main-container {
+    height: 90vh;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1e1e2f;
+    color: #f1f1f1;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.chat-list-container .dropdown-toggle::after {
+    display: none;
+}
+
+.chat-app-theme .chat-list-container {
+    width: 300px;
+    min-width: 220px;
+    max-width: 400px;
+    resize: horizontal;
+    overflow: auto;
+    background-color: #2a2a40;
+    border-right: 1px solid #3d3d5c;
+    padding: 1rem;
+}
+
+.chat-app-theme .chat-window-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background: linear-gradient(145deg, #1e1e2f, #1a1a2a);
+}
+
+.chat-app-theme .chat-item {
+    cursor: pointer;
+    padding: 0.75rem;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: background 0.2s;
+}
+.chat-app-theme .chat-item:hover {
+    background-color: #3a3a65;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+.chat-app-theme .chat-item.active {
+    background-color: #4a4a75;
+    color: #ffffff;
+}
+
+.chat-app-theme .chat-item.active .fw-semibold {
+    color: #ffffff;
+}
+
+.chat-app-theme .chat-item.active .text-muted {
+    color: #d0d0ff; /* Slightly brighter for contrast */
+}
+
+.chat-app-theme .chat-header {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.chat-app-theme .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 1rem;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #666 #2a2a40;
+}
+.chat-app-theme .chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-app-theme .chat-messages::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+.chat-app-theme .chat-input-container {
+    padding: 1rem;
+    background-color: #2a2a40;
+    border-top: 1px solid #444;
+}
+
+.chat-app-theme input.form-control {
+    background-color: #2a2a40;
+    color: #f1f1f1;
+    border: 1px solid #555;
+}
+.chat-app-theme input.form-control:focus {
+    background-color: #2a2a40;
+    color: #f1f1f1;
+    border-color: #007bff;
+}
+.chat-app-theme .form-control::placeholder {
+    color: #888 !important;
+}
+
+.chat-app-theme .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.chat-app-theme .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.chat-app-theme .text-primary {
+    color: #4da3ff !important;
+}
+.chat-app-theme .text-muted {
+    color: #a9a9b3 !important;
+}
+.chat-app-theme .fw-semibold {
+    color: #f1f1f1;
+}
+.chat-app-theme .cursor-pointer {
+    cursor: pointer;
+}
+
+.chat-app-theme .message-bubble {
+    max-width: 75%;
+    word-wrap: break-word;
+}
+.chat-app-theme .message-wrapper {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.chat-app-theme .p-3.rounded-4 {
+    border-radius: 18px 18px 18px 0px;
+    animation: slideIn 0.2s ease-in;
+}
+
+.chat-app-theme .message-actions {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    margin-top: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.chat-app-theme .message-wrapper:hover .message-actions {
+    opacity: 1;
+}
+
+.chat-app-theme .message-actions-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.chat-app-theme .message-bubble-wrapper:hover + .message-actions-vertical {
+    opacity: 1;
+}
+
+.icon-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chat-header {
+    background: rgba(20, 20, 20, 0.25);
+    border-radius: 16px;
+}
+
+.chat-window-container {
+    background: #1f1f1f;
+    color: #f0f0f0;
+}
+
+.chat-input-container input.form-control {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+}
+
+.chat-input-container input.form-control:focus {
+    background-color: #2a2a2a;
+    box-shadow: none;
+    outline: none;
+}
+
+.chat-input-container .btn-primary {
+    background-color: #2563eb;
+    border: none;
+    transition: background 0.2s ease;
+}
+
+.chat-input-container .btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.user-selection-panel {
+    width: 300px;
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    overflow-y: auto;
+}   
+
+.chat-item:hover {
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease;
+}
+
+.bg-highlight {
+    background-color: #4a4a75 !important;
+    color: white !important;
+}
+
+/* Dropdown fix for dark theme */
+.custom-dropdown-menu {
+    background-color: #2a2a40 !important;
+    color: #f1f1f1 !important;
+    border: 1px solid #444;
+    min-width: 150px;
+}
+
+.custom-dropdown-menu .dropdown-item {
+    color: #f1f1f1;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.custom-dropdown-menu .dropdown-item:hover,
+.custom-dropdown-menu .dropdown-item:focus {
+    background-color: #4a4a75;
+    color: hsl(0, 0%, 100%);
+}
+
+.chat-scroll-container {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+}
+
+.chat-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.chat-item-hover:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    transform: scale(1.01);
+}
+
+.audio-call-window {
+  backdrop-filter: blur(10px);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+}

@@ -1,0 +1,75 @@
+.group-info-sidebar .field-value {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.group-info-sidebar .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-info-sidebar .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: none;
+}
+
+.group-info-sidebar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.group-info-sidebar input,
+.group-info-sidebar textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-info-sidebar input:focus,
+.group-info-sidebar textarea:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.group-info-sidebar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease;
+}
+
+.group-info-sidebar .field-value {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.group-info-sidebar .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-info-sidebar .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+    box-shadow: none;
+}
+
+.group-info-sidebar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.field-value {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

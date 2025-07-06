@@ -1,0 +1,132 @@
+.group-info-sidebar {
+  width: 350px;
+  height: 100%;
+  background: rgba(24, 24, 28, 0.9);
+  backdrop-filter: blur(8px);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  animation: fadeSlideIn 0.4s ease forwards;
+}
+
+/* Fade + Slide In Animation */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.group-info-sidebar input,
+.group-info-sidebar textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.group-info-sidebar input::placeholder,
+.group-info-sidebar textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.group-info-sidebar input:focus,
+.group-info-sidebar textarea:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.group-info-sidebar hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollable member section */
+.group-info-sidebar .member-scroll-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar by default */
+.group-info-sidebar .member-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.group-info-sidebar .member-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.group-info-sidebar .member-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.group-info-sidebar .member-scroll-container:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Firefox scrollbar */
+.group-info-sidebar .member-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.group-info-sidebar .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.group-info-sidebar button {
+  transition: all 0.2s ease;
+}
+
+.group-info-sidebar .member-scroll-container > div {
+  transition: transform 0.2s ease;
+}
+
+.group-info-sidebar .member-scroll-container > div:hover {
+  transform: translateX(5px);
+}
+
+.group-info-sidebar textarea {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  resize: none; /* optional: to prevent drag resize */
+}
+
+.group-info-sidebar input,
+.group-info-sidebar textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group-info-sidebar input:focus,
+.group-info-sidebar textarea:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.group-info-sidebar .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease;
+}
+
